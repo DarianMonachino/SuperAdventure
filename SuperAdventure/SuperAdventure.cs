@@ -181,7 +181,7 @@ namespace SuperAdventure
             }
 
             // Refresh player's inventory list
-            UpdateInventoryListInUI();
+            UpdateInventoryListInUi();
 
             // Refresh player's quest list
             UpdateQuestListInUi();
@@ -193,7 +193,7 @@ namespace SuperAdventure
             UpdatePotionListInUi();
         }
 
-        private void UpdateInventoryListInUI()
+        private void UpdateInventoryListInUi()
         {
             dgvInventory.RowHeadersVisible = false;
 
@@ -366,7 +366,7 @@ namespace SuperAdventure
                 lblExperience.Text = _player.ExperiencePoints.ToString();
                 lblLevel.Text = _player.Level.ToString();
 
-                UpdateInventoryListInUI();
+                UpdateInventoryListInUi();
                 UpdateWeaponListInUi();
                 UpdatePotionListInUi();
 
@@ -452,7 +452,7 @@ namespace SuperAdventure
 
             // Refresh player data in UI
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
-            UpdateInventoryListInUI();
+            UpdateInventoryListInUi();
             UpdatePotionListInUi();
         }
     }
