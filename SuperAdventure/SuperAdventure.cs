@@ -184,13 +184,13 @@ namespace SuperAdventure
             UpdateInventoryListInUI();
 
             // Refresh player's quest list
-            UpdateQuestListInUI();
+            UpdateQuestListInUi();
 
             // Refresh player's weapons combobox
-            UpdateWeaponListInUI();
+            UpdateWeaponListInUi();
 
             // Refresh player's potions combobox
-            UpdatePotionListInUI();
+            UpdatePotionListInUi();
         }
 
         private void UpdateInventoryListInUI()
@@ -213,7 +213,7 @@ namespace SuperAdventure
             }
         }
 
-        private void UpdateQuestListInUI()
+        private void UpdateQuestListInUi()
         {
             dgvQuests.RowHeadersVisible = false;
 
@@ -230,7 +230,7 @@ namespace SuperAdventure
             }
         }
 
-        private void UpdateWeaponListInUI()
+        private void UpdateWeaponListInUi()
         {
             List<Weapon> weapons = new List<Weapon>();
 
@@ -261,7 +261,7 @@ namespace SuperAdventure
             }
         }
 
-        private void UpdatePotionListInUI()
+        private void UpdatePotionListInUi()
         {
             List<HealingPotion> healingPotions = new List<HealingPotion>();
 
@@ -367,8 +367,8 @@ namespace SuperAdventure
                 lblLevel.Text = _player.Level.ToString();
 
                 UpdateInventoryListInUI();
-                UpdateWeaponListInUI();
-                UpdatePotionListInUI();
+                UpdateWeaponListInUi();
+                UpdatePotionListInUi();
 
                 // Add a blank line to the messages box, just for appearance.
                 rtbMessages.Text += Environment.NewLine;
@@ -453,7 +453,7 @@ namespace SuperAdventure
             // Refresh player data in UI
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
             UpdateInventoryListInUI();
-            UpdatePotionListInUI();
+            UpdatePotionListInUi();
         }
     }
 }
